@@ -9,17 +9,7 @@
        
         
         </v-container>
-                <div v-if="imgUrl == null ">
-        <v-flex xs12 sm6 offset-sm3>
-              <v-btn raised color="red" @click="onPickFile" v-if="nullval ">Upload Image</v-btn>
-              <input
-                type="file"
-                style="display: none"
-                ref="fileInput"
-                accept="image/*"
-                @change="onFilePicked">
-            </v-flex>
-        </div>
+                
              <v-container>
               <img :src="imgUrl"  > 
              </v-container>
